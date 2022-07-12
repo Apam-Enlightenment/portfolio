@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /*font-family: Courier New, Courier, monospace;*/
+    
+    /*color: #0da8f2;
+    */
+    background-color: #f3f3f3;
+}
+.top:before{
+    content: " ";
+    background-image: url(header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    /*height: 420px;*/
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.top{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 97.5vh;
+    /*height: 400px;*/
+    position: relative;
+    padding-top: 1rem;
+}
+.top-inner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.myimg{
+    /*border-radius: 50%;*/
+    
+    border:  3px solid white;
+    
+}
+.header{
+    width: 70%;
+    color: #f3f3f3;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 15rem;
+}
+.head2{
+    color: #f3f3f3;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.red{
+    color: red;
+}
+.btn-div{
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+.button{
+    height: 30px;
+    width: 100px;
+    font-size: 12pt;
+    font-family: roboto;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #f3f3f3;
+    background-color: red;    
+    text-align: center;
+    border-radius: 2rem;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+.button:hover{
+    color: red;
+    background-color: white;
+    border: 0.2px solid red;
+}
+/*
+/////////////////////
+Section 1
+///////////////////////
+*/
+.section-1{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    padding-top: 8rem;
+    padding-left: 10rem;
+    background-color: #f3f3f3;
+}
+.section-1-inner{
+    width: 70%;
+    margin-bottom: 5rem;
+}
+.title-head{
+    color: red;
+    font-size: 15pt;
+    font-family: Courier New, Courier, monospace;
+}
+.section-1-inner > p, .section-1-inner > h3{
+    color: #444;
+    font-size: 2rem;
+    font-family: Courier New, Courier, monospace;
+}
+abbr{
+    text-decoration: none;
+    cursor: pointer;
+}
+.code-icons{
+    margin-top: 2rem;
+}
+/*
+/////////////////////
+Section 2
+///////////////////////
+*/
+.section-2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    height: 20rem;
+    font-family: Courier New, Courier, monospace;
+    color: #444;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    border-top: 1px solid #ddd;
+}
+.works{
+    width: 18%;
+    transition: all 0.75s ease-in;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.works:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+.web-img{
+    width:100%;
+    height: 45%;
+    border-radius: 10px 10px 0px 0px;
+}
+.works >a{
+    text-decoration: none;
+    color: #444;
+    font-size: 2rem;
+    font-family: Courier New, Courier, monospace;
+}
+.text-div{
+    /*margin-left: 1rem;*/
+    padding: 2px 16px;
+}
+/*
+/////////////////////
+Section 3
+///////////////////////
+*/
+.section-3{
+    background-color: #f3f3f3;
+    height: 10rem;
+    margin-top: 2rem;
+    font-family: Courier New, Courier, monospace;
+    color: #444;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.contact{
+    width: 30px;
+    height: 30px;
+    transition: all 0.75s ease-in;
+}
+.contact:hover{
+    transform: scale(1.2);
+}
+.btn-repo{
+    cursor: pointer;
+}
+#contact{
+    margin-bottom: 3.5rem;
+}
+.see:link{
+    text-decoration: none;
+    color: white;
+}
+.see:hover{
+    color: blue;
+}
+.see:visited{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    background-color: #f3f3f3;
+    height: 5rem;
+    font-family: Courier New, Courier, monospace;
+    color: red;
+    text-align: center;
+}
+.repo-glow{
+    -webkit-animation: breathing 1s ease-out infinite normal;
+    animation: breathing 1s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+}
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(1.9);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.section{
+    transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+@media only screen and (max-width: 1011px){
+    .top:before{
+        background-image: url(header2.jpg);
+        background-size:  cover;
+        background-repeat: no-repeat;
+    }
+    .head2{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 845px){
+    .header{
+        margin-top: 8rem;
+    }
+    .section-1{
+        align-items: center;
+        padding-left: .1rem;
+    }
+    .works >a{
+        font-size: 1.6rem;;
+    }
+    .section-2{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }   
+    .works{
+        width: 85%;
+        margin-top: 2rem;
+        height: 25%;
+    }
+}
+@media only screen and (max-width: 460px){
+    .header{
+        font-size: 30px;
+        margin-top: 15rem;
+    }
+    .head2{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+}
